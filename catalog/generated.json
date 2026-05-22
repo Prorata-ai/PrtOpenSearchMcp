@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "aliases": {
+    "aliases": {
+      "indexPattern": "publishers_index-*"
+    }
+  },
+  "fields": {
+    "v2": {
+      "content": "Indexed chunk text",
+      "embedding": "kNN vector",
+      "document_metadata.id": "Document id",
+      "chunk_metadata.contentKind": "narrative | structured_*"
+    },
+    "v1": {
+      "chunk_content": "Chunk text v1.1",
+      "document_id": "Document id v1.1"
+    }
+  }
+}

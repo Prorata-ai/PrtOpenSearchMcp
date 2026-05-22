@@ -1,0 +1,22 @@
+{
+  "mcpServers": {
+    "prt-opensearch-local": {
+      "command": "/path/to/PrtOpenSearchMcp/.venv/bin/python",
+      "args": ["-m", "prt_opensearch_mcp", "--transport", "stdio"],
+      "cwd": "/path/to/PrtOpenSearchMcp",
+      "env": {
+        "PYTHONPATH": "/path/to/PrtOpenSearchMcp/src:/path/to/PrtMcpCommon/src",
+        "PRT_OS_MCP_LOCAL_URL": "https://localhost:9200",
+        "PRT_OS_MCP_LOCAL_VERIFY_SSL": "false",
+        "PRT_OS_MCP_LOCAL_USER": "admin",
+        "PRT_OS_MCP_LOCAL_PASSWORD": "YourStrongPassw0rd!"
+      }
+    },
+    "prt-opensearch-cloud": {
+      "url": "https://mcp.dev.prorata.ai/opensearch/mcp",
+      "headers": {
+        "Authorization": "Bearer ${env:PRT_MCP_API_KEY}"
+      }
+    }
+  }
+}
