@@ -10,7 +10,6 @@ MCP server for **ProRata OpenSearch** chunk indices (`documents_search_alias_v2`
 ## Install
 
 ```bash
-cd ProRata
 pip install -e ./PrtMcpCommon -e ./PrtOpenSearchMcp
 python PrtOpenSearchMcp/scripts/build_catalog.py
 ```
